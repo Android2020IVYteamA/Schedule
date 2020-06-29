@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_year"
+            android:icon="@drawable/ic_year"
+            android:title="@string/Year" />
+        <item
+            android:id="@+id/nav_month"
+            android:icon="@drawable/ic_month"
+            android:title="@string/Month" />
+        <item
+            android:id="@+id/nav_timetable"
+            android:icon="@drawable/ic_timetable"
+            android:title="@string/TimeTable" />
+        <item
+            android:id="@+id/nav_event"
+            android:icon="@drawable/ic_event"
+            android:title="@string/Event" />
+        <item
+            android:id="@+id/nav_option"
+            android:icon="@drawable/ic_option"
+            android:title="@string/option" />
+    </group>
+</menu>
