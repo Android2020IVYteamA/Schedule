@@ -8,8 +8,10 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
+import androidx.navigation.fragment.findNavController
 import com.example.ischeduler.R
-import kotlinx.android.synthetic.main.fragment_month.*
+import com.example.ischeduler.Schedule_EditActivity
+import kotlinx.android.synthetic.main.fragment_month.view.*
 
 class MonthFragment : Fragment() {
 
@@ -23,17 +25,26 @@ class MonthFragment : Fragment() {
         galleryViewModel =
                 ViewModelProviders.of(this).get(MonthViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_month, container, false)
-        fab.setOnClickListener {view ->
-
-
-        }
 
 
         galleryViewModel.text.observe(viewLifecycleOwner, Observer {
 
         })
+
+        root.fab.setOnClickListener {
+            val intent = Intent(activity, Schedule_EditActivity::class.java)
+            startActivity(intent)
+
+        }
         return root
     }
+
+
+
+
+
+
+
 
 
 }
