@@ -1,10 +1,16 @@
 package com.example.ischeduler
 
-import android.app.Dialog
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.text.format.DateFormat
+import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import com.example.ischeduler.EventFragment.Companion.newInstance
+import com.example.ischeduler.timetableFragment.Companion.newInstance
+import com.example.ischeduler.ui.Month.MonthFragment
 import kotlinx.android.synthetic.main.activity_schedule__edit.*
+import java.time.Month
 import java.util.*
 
 class Schedule_EditActivity : AppCompatActivity()
@@ -35,5 +41,10 @@ class Schedule_EditActivity : AppCompatActivity()
             val dialog=TimePickerFragment()
             dialog.show(supportFragmentManager,"time_dialog")
         }
+        backbutton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
+
 }
