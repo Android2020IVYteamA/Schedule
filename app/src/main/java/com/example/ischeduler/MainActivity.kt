@@ -3,6 +3,7 @@ package com.example.ischeduler
 import android.os.Bundle
 import android.text.format.DateFormat
 import android.view.Menu
+import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -14,6 +15,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import kotlinx.android.synthetic.main.fragment_month.*
 import java.util.*
 
 class MainActivity : AppCompatActivity()
@@ -40,6 +42,7 @@ class MainActivity : AppCompatActivity()
             R.id.nav_year, R.id.nav_month, R.id.nav_timetable,R.id.nav_event,R.id.nav_option), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
 
 
     }

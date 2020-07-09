@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.043" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/titleText"
         android:layout_width="260dp"
         android:layout_height="45dp"
         android:layout_marginTop="72dp"
@@ -42,10 +42,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.237"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/detailText"
         android:layout_width="256dp"
         android:layout_height="86dp"
         android:layout_marginTop="64dp"
@@ -55,7 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.541"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/titleText" />
 
     <TextView
         android:id="@+id/textView4"
@@ -67,7 +67,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/detailText" />
 
     <TextView
         android:id="@+id/textView5"
@@ -82,7 +82,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/placeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -94,17 +94,17 @@
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <Button
-        android:id="@+id/backbutton"
+        android:id="@+id/delete"
         android:layout_width="85dp"
         android:layout_height="40dp"
         android:layout_marginTop="36dp"
         android:background="@color/colorAccent"
-        android:text="戻る"
+        android:text="削除"
         android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.245"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintTop_toBottomOf="@+id/placeText" />
 
     <Button
         android:id="@+id/addbutton"
@@ -116,8 +116,8 @@
         android:textColor="@color/cardview_light_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.677"
-        app:layout_constraintStart_toEndOf="@+id/backbutton"
-        app:layout_constraintTop_toBottomOf="@+id/editText5" />
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toBottomOf="@+id/placeText" />
 
     <TextView
         android:id="@+id/datetext"
