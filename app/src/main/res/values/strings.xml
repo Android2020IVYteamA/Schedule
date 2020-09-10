@@ -25,4 +25,6 @@
     <string name="option">設定</string>
     <string name="header">I scheduler</string>
     <string name="Schedule_add">スケジュール登録</string>
+
+
 </resources>

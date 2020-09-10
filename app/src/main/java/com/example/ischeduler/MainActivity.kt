@@ -1,7 +1,9 @@
 package com.example.ischeduler
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.format.DateFormat
+import android.util.Log
 import android.view.Menu
 import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -15,6 +17,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.app.AppLaunchChecker
 import kotlinx.android.synthetic.main.fragment_month.*
 import java.util.*
 
@@ -43,6 +46,17 @@ class MainActivity : AppCompatActivity()
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
+
+        if(AppLaunchChecker.hasStartedFromLauncher(this)){
+            Log.d("AppLaunchChecker","2回目以降");
+
+        } else {
+            Log.d("AppLaunchChecker","はじめてアプリを起動した");
+            val intent=Intent(this,First_Activity::class.java)
+            startActivity(intent)
+        }
+
+        AppLaunchChecker.onActivityCreate(this);
 
 
     }

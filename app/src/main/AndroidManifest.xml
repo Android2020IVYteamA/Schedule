@@ -10,7 +10,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Schedule_EditActivity"></activity>
+        <activity android:name=".gakka_editActivity"></activity>
+        <activity android:name=".First_Activity" />
+        <activity android:name=".Schedule_EditActivity" />
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"

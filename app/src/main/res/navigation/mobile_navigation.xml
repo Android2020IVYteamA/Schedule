@@ -6,43 +6,44 @@
     app:startDestination="@id/nav_month">
 
     <fragment
-        android:id="@+id/nav_year"
-        android:name="com.example.ischeduler.ui.Year.YearFragment"
-        android:label="@string/Year"
-        tools:layout="@layout/fragment_year" />
-
-    <fragment
         android:id="@+id/nav_month"
         android:name="com.example.ischeduler.ui.Month.MonthFragment"
         android:label="@string/Month"
         tools:layout="@layout/fragment_month">
         <action
-            android:id="@+id/action_nav_month_to_nav_year"
-            app:destination="@id/nav_year" />
-        <action
-            android:id="@+id/action_nav_month_to_nav_timetable"
-            app:destination="@id/nav_timetable" />
-        <action
-            android:id="@+id/action_nav_month_to_nav_event"
-            app:destination="@id/nav_event" />
-        <action
-            android:id="@+id/action_nav_month_to_optionFragment"
-            app:destination="@id/nav_option" />
+            android:id="@+id/action_nav_month_to_mobile_navigation"
+            app:destination="@id/mobile_navigation" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_timetable"
         android:name="com.example.ischeduler.timetableFragment"
         android:label="@string/TimeTable"
-        tools:layout="@layout/timetable_fragment" />
+        tools:layout="@layout/timetable_fragment" >
+        <action
+            android:id="@+id/action_nav_timetable_to_mobile_navigation"
+            app:destination="@id/mobile_navigation" />
+    </fragment>
     <fragment
         android:id="@+id/nav_event"
         android:name="com.example.ischeduler.EventFragment"
         android:label="@string/Event"
-        tools:layout="@layout/event_fragment" />
+        tools:layout="@layout/event_fragment" >
+        <action
+            android:id="@+id/action_nav_event_to_mobile_navigation"
+            app:destination="@id/mobile_navigation" />
+    </fragment>
     <fragment
         android:id="@+id/nav_option"
         android:name="com.example.ischeduler.ui.Option.OptionFragment"
         android:label="@string/option"
-        tools:layout="@layout/fragment_option" />
+        tools:layout="@layout/fragment_option" >
+        <action
+            android:id="@+id/action_nav_option_to_mobile_navigation2"
+            app:destination="@id/mobile_navigation" />
+    </fragment>
+    <fragment
+        android:id="@+id/yearFragment"
+        android:name="com.example.ischeduler.ui.Year.YearFragment"
+        android:label="YearFragment" />
 </navigation>

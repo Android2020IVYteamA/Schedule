@@ -36,6 +36,7 @@ class MonthFragment : Fragment() {
                 ViewModelProviders.of(this).get(MonthViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_month, container, false)
 
+
         galleryViewModel.text.observe(viewLifecycleOwner, Observer {
 
         })
@@ -73,10 +74,7 @@ class MonthFragment : Fragment() {
         return root
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        realm.close()
-    }
+
 
 
 

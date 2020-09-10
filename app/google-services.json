@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "580505414147-65l8tonepcneah7p39a1oul7fdjunpdh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ischeduler",
+            "certificate_hash": "119e7ee7ea6c3337c752194ec1c91a43e3a69989"
+          }
+        },
+        {
           "client_id": "580505414147-hj3k1lv5i1i0baoruuv2g2obt79ko6ss.apps.googleusercontent.com",
           "client_type": 3
         }
